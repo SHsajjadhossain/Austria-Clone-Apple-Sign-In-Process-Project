@@ -1,0 +1,563 @@
+
+/* ==========================================================
+                    common css start
+============================================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background: transparent;
+}
+
+.globalnav-content{
+    width: 100%;
+    max-width: 1024px;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================================
+                    common css end
+=========================================================== */
+
+/* ========================================================
+                    nav-part css start
+============================================================ */
+
+nav{
+    position: relative;
+    margin-top: 0;
+    /* border-top: 1px solid #4a350c; */
+    /* position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 9999; */
+    z-index: 9999;
+    width: 100%;
+    padding-top: 0 !important;
+}
+
+nav .logo{
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+nav .nav-wrapper{
+    display: flex !important;
+    justify-content: center;
+}
+
+nav ul{
+    position: relative;
+    align-items: baseline;
+}
+
+nav ul li{
+    margin-right: 32px;
+    transition: .4s;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul li a{
+    font-family: 'Arial', sans-serif;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #ffffff;
+    transition: .4s;
+    padding: 0 !important;
+}
+
+nav ul li .nav-icon{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: rgba(0, 0, 0, .8);
+    margin-left: 7px;
+    /* transition: .4s; */
+}
+
+/* =========================================================
+                    nav-part css end
+============================================================ */
+
+/* =========================================================
+                    mega-menu-part css start
+============================================================ */
+
+nav .mega-menu{
+    visibility: visible;
+    width: 100%;
+    background: #ffffff;
+    /* background: #fafafc;
+    background: #f5f5f7; */
+    padding-top: 35px;
+    padding-bottom: 130px;
+    position: absolute;
+    bottom: -550px;
+    left: -65px;
+    opacity: 0;
+    z-index: 1111;
+    transition: .5s;
+    /* background: rgb(110, 110, 115); */
+}
+
+nav .mega-menu .sub-menu-header{
+    font-size: 12px;
+    line-height: 1.3333733333;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: rgb(110, 110, 115, 1);
+    display: block;
+}
+
+nav .mega-menu .sub-menu-list{
+    padding: 0;
+}
+
+nav .mega-menu .sub-menu-list-item-elevated:first-child{
+    margin-top: 6px;
+}
+
+nav .mega-menu .sub-menu-list-item-elevated{
+    padding-top: 9px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav .mega-menu .sub-menu-list-item-elevated a{
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    line-height: 1.1666666667;
+    letter-spacing: .009em;
+    color: #333336;
+}
+
+nav .mega-menu .second-last-item{
+    margin-top: 14px;
+}
+
+nav .mega-menu .sub-menu-list-item{
+    margin-bottom: 0;
+}
+
+nav .mega-menu .sub-menu-list-item a{
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.3333733333;
+    letter-spacing: -.01em;
+    color: #333336;
+}
+
+/* nav .navbar-nav .full-body-menu{
+    width: 100%;
+    height: 100vh;
+    background: #d2d2d7
+} */
+
+nav .navbar-nav .nav-item:hover .mega-menu{
+    visibility: visible;
+    opacity: 1;
+    bottom: -500px;
+}
+
+/* nav .navbar-nav .nav-item:hover .full-body{
+    background: #d2d2d7 !important;
+
+    background: #f5f5f7 !important;
+} */
+
+/* =========================================================
+                    mega-menu-part css end
+============================================================ */
+
+/* =========================================================
+                    header-part css start
+============================================================ */
+
+/* #header-part {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+} */
+
+#header-part .header-wrapper{
+    position: relative;
+}
+
+#header-part .header-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 96%;
+    height: 1px;
+    background: #d6d4d1;
+}    
+
+#header-part .header-title{
+    font-size: 21px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#header-part .account-items{
+    display: inline-block;
+    margin-left: 35%;
+}
+
+#header-part .account-items a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 18px;
+}
+
+#header-part .account-items .sign-in-btn {
+   pointer-events: none;
+   color: #999797;
+}
+
+#header-part .header-link:hover{
+    color: #0071e3;
+}
+
+/* =========================================================
+                    header-part css end
+============================================================ */
+
+/* =========================================================
+                    header-sticky-part css start
+============================================================ */
+
+#header-sticky-part{
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+/* #header-sticky-part .header-sticky-wrapper{
+    
+} */
+
+#header-sticky-part .header-sticky-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #d6d4d1;
+}    
+
+#header-sticky-part .header-sticky-wrapper .header-title{
+    font-size: 21px;
+    font-weight: 600;
+    color: #000000;
+}
+
+#header-sticky-part .header-sticky-wrapper .account-items{
+    display: inline-block;
+    margin-left: 35%;
+}
+
+#header-sticky-part .header-sticky-wrapper .account-items a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 18px;
+}
+
+#header-sticky-part .header-sticky-wrapper .account-items .sign-in-btn {
+   pointer-events: none;
+   color: #999797;
+}
+
+#header-sticky-part .header-sticky-wrapper .header-link:hover{
+    color: #0071e3;
+}
+
+/* =========================================================
+                    header-sticky-part css end
+============================================================ */
+
+
+/* =========================================================
+                    main-part css start
+============================================================ */
+
+#main-part{
+    padding-bottom: 265px;
+}
+
+#main-part .banner-img{
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+#main-part .text-area .title{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: .004em;
+    line-height: 1.125;
+    color: #494949;
+}
+
+#main-part .text-area .sub-title{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.47059;
+    color: #494949;
+    margin-top: 13px;
+    margin-bottom: 40px;
+}
+
+#main-part .input-area{
+    position: relative;
+}
+
+#main-part .text-input{
+    width: 480px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 400;
+    background: transparent;
+    color: #494949;
+    border: 1px solid #86868b;
+    border-radius: 12px;
+    outline-color: #0071e3;
+    padding-top: 25px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+}
+
+#main-part .email-input{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#main-part .label-text{
+    position: absolute;
+    top: 15px;
+    left: 275px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #6e6e73;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#main-part .pass-input{
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#main-part input:focus~.label-text,
+#main-part input:valid~.label-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: #494949;
+    top: 10px;
+}
+
+
+/* #main-part .text-input{
+    width: 480px;
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    height: 3.29412rem;
+    background: transparent;
+    color: #494949;
+    border: 1px solid #86868b;
+    border-radius: 12px;
+    padding: 1.0588235294rem .9411764706rem 0;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-right: 43px;
+    outline-color: #0071e3;
+    transition: 0.1s ease;
+} */
+
+/* #main-part .label-text{
+    position: absolute;
+    top: 20px;
+    left: 275px;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.2353641176;
+    color: #6e6e73;
+    transition: 0.2s ease;
+} */
+
+/* #main-part input:focus + .label-text{
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    top: 27px;
+    padding-left: 15px;
+    transform: translate(-15px, -16px);
+} */
+
+#main-part .input-area .si-button{
+    position: absolute;
+    top: 16px;
+    right: 275px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #494949;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+#main-part .input-area .si-button .arrow-right{
+    font-size: 17px;
+    color: #494949;
+    text-align: center;
+}
+
+/* #main-part .input-area .si-button:disabled{
+    border: 1px solid #86868b;
+    color: #86868b;
+} */
+
+#main-part .input-area .si-button:disabled .arrow-right{
+    color: #86868b;
+}
+
+#main-part .check-group{
+    margin-top: 125px;
+    margin-bottom: 45px;
+}
+
+#main-part .check-group .check-input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+#main-part .check-group .remember-box{
+    font-size: 17px;
+    font-weight: 400;
+    color: #494949;
+    margin-left: 6px;
+}
+
+#main-part .forgot-pass{
+    font-size: 14px;
+    font-weight: 400;
+    color: #06c;
+}
+
+#main-part .forgot-pass .right-up-arrow{
+    font-size: 11px;
+    font-weight: 700;
+    color: #06c;
+    margin-left: 5px;
+}
+
+#main-part .forgot-pass:hover{
+    text-decoration: underline;
+}
+
+/* =========================================================
+                    main-part css end
+============================================================ */
+
+/* =========================================================
+                    footer-part css start
+============================================================ */
+
+#footer-part{
+    background: #f5f5f7;
+    padding: 17px 0 21px;
+}
+
+#footer-part .copyright-wrapper{
+    display: flex;
+}
+
+#footer-part .footer-text{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#footer-part .footer-contact{
+    color: #6e6e73;
+    margin-bottom: 3px;
+}
+
+#footer-part .footer-contact a{
+    color: #06c;
+}
+
+#footer-part .copyright-text p{
+    color: #6e6e73;
+    margin-right: 30px;
+}
+
+#footer-part .footer-nav .footer-nav-link{
+    color: #424245;
+    margin-right: 7px;
+    padding-right: 10px;
+    border-right: 1px solid #d2d2d7;
+}
+
+#footer-part .footer-nav .footer-nav-link:last-child{
+    border-right: none;
+}
+
+#footer-part .country-link{
+    color: #424245;
+}
+
+#footer-part .footer-contact a:hover{
+    text-decoration: underline;
+}
+
+#footer-part .footer-nav .footer-nav-link:hover{
+    text-decoration: underline;
+}
+
+#footer-part .country-link:hover{
+    text-decoration: underline;
+}
+
+/* =========================================================
+                    footer-part css end
+============================================================ */

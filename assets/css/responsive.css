@@ -1,0 +1,904 @@
+@media(max-width: 575.99px) {
+
+    /* common css start */
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body{
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .sub-title{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .button{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn{
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid rgb(30, 57, 138);
+        border-radius: 30px;
+        color: #FFFFFF;
+        background: rgb(30, 57, 138);
+        transition: .4s;
+    }
+
+    .btn:hover{
+        background: transparent;
+        border-color: #067FFE;
+        color: #067FFE;
+    }
+
+    /* common css end */
+
+    /***
+        First page responsive css end
+    ***/
+
+    /* Header area start */
+
+    #header-area{
+        background: url(../images/banner.png) no-repeat center;
+    }
+
+    #header-area .overlay{
+        background: rgb(30, 57, 138, 0.98);
+        padding-top: 35px;
+        padding-bottom: 90px;
+    }
+
+    #header-area .header-top{
+        display: flex;
+    }
+
+    #header-area .header-top .box{
+        width: 40%;
+    }
+
+    #header-area .header-top .text{
+        width: 60%;
+    }
+
+    #header-area .header-top .header-box{
+        width: 35px;
+        height: 35px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+    }
+
+    #header-area .header-top h5{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 27px;
+        color: #FFFFFF;
+        text-align: right;
+    }
+    
+    #header-area .header-bottom{
+        margin-top: 70px;
+        padding-left: 15px;
+    }
+
+    #header-area .text-one{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+
+    #header-area .header-bottom .title{
+        line-height: 26px;
+        color: #90A9EA;
+        margin-top: 5px;
+    }
+
+    #header-area .icon{
+        display: flex;
+    }
+
+    /* Header area end */
+
+    /* Drag area start */
+
+    #drag-area .drag-wrapper{
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 42px;
+        padding: 25px 0;
+        position: absolute;
+        top: 260px;
+        left: 11px;
+        width: 93%;
+    }
+
+    #drag-area .icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    #drag-area .icon-item{
+        width: 38px;
+        height: 38px;
+        background: #1E398A;
+        border: 1px solid #1E398A;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 35px;
+        margin-right: 20px;
+    }
+
+    #drag-area .icon-item img{
+        width: 55%;
+    }
+
+    #drag-area .icon a{
+        margin-top: 10px;
+    }
+
+    #drag-area .icon i{
+        font-size: 18px;
+        color: #A1B1DF;
+        margin-right: 20px;
+    }
+
+    #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    #drag-area .drag-title-box{
+        text-align: center;
+        margin-top: 45px;
+        margin-bottom: 25px;
+    }
+
+    #drag-area .drag-title-box .title-box-icon{
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 65px;
+        height: 65px;
+        line-height: 63px;
+    }
+
+    #drag-area .drag-title-box .sub-title{
+        line-height: 30px;
+        color: #1E398A;
+    }
+
+    #drag-area .drag-title-box .upload-sub-title{
+        font-weight: 700;
+    }
+
+    #drag-area .drag-wrapper .drag-upload-area{
+        border: 2px dashed #d1cece;
+        border-radius: 17px;
+        padding: 25px 20px;
+        cursor: pointer;
+    }
+
+    #drag-area .drag-wrapper .drag-upload-area .browse-photo-pointer{
+        cursor: pointer;
+    }
+    
+    #drag-area .drag-upload-area .title{
+        line-height: 30px;
+        color: #3662C6;
+    }
+        
+    #drag-area .drag-wrapper .drag-upload-area .top-upload-title{
+        margin-bottom: 30px;
+    }
+
+    #drag-area .drag-upload-area .sub-title{
+        line-height: 27px;
+        color: #6785E5;
+    }
+
+    #drag-area .drag-upload-area i{
+        display: block;
+        font-size: 28px;
+        color: #0B80FB;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #drag-area .drag-upload-area .upload-icon-title{
+        display: block;
+        color: #067FFE;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Drag area end */
+
+    /***
+        First page responsive css end
+    ***/
+
+
+    /***
+        Second page responsive css start
+    ***/
+
+    #drag-area .drag-wrapper .drag-upload-area .upload-title-gap{
+        margin-bottom: 10px;
+    }
+
+    #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    #drag-area .icon .globe-icon{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    /***
+        Second page responsive css end
+    ***/
+
+    /***
+        Third page responsive css start
+    ***/
+
+    #drag-area .drag-wrapper .drag-upload-area .upload-title-gap{
+        margin-bottom: 10px;
+    }
+
+    #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    #drag-area .icon .globe-icon{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    #drag-area .icon .face-icon{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    /***
+        Third page responsive css end
+    ***/
+    
+}
+
+@media(min-width: 576px) and (max-width: 767.99px) {
+
+    /* common css start */
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body{
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .sub-title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .button{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn{
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid rgb(30, 57, 138);
+        border-radius: 30px;
+        color: #FFFFFF;
+        background: rgb(30, 57, 138);
+        transition: .4s;
+    }
+
+    .btn:hover{
+        background: transparent;
+        border-color: #067FFE;
+        color: #067FFE;
+    }
+
+    /* common css end */
+
+    /***
+        First page responsive css end
+    ***/
+
+    /* Header area start */
+
+    #header-area{
+        background: url(../images/banner.png) no-repeat center;
+    }
+
+    #header-area .overlay{
+        background: rgb(30, 57, 138, 0.98);
+        padding-top: 35px;
+        padding-bottom: 90px;
+    }
+
+    #header-area .header-top{
+        display: flex;
+    }
+
+    #header-area .header-top .box{
+        width: 50%;
+    }
+
+    #header-area .header-top .text{
+        width: 50%;
+    }
+
+    #header-area .header-top .header-box{
+        width: 47px;
+        height: 47px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+    }
+
+    #header-area .header-top h5{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+        text-align: right;
+    }
+    
+    #header-area .header-bottom{
+        margin-top: 70px;
+        padding-left: 15px;
+    }
+
+    #header-area .text-one{
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+
+    #header-area .header-bottom .title{
+        line-height: 26px;
+        color: #90A9EA;
+        margin-top: 5px;
+    }
+
+    #header-area .icon{
+        display: flex;
+    }
+
+    /* Header area end */
+
+    /* Drag area start */
+
+    #drag-area .drag-wrapper{
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 42px;
+        padding: 25px 0;
+        position: absolute;
+        top: 290px;
+        left: 31px;
+        width: 89%;
+    }
+
+    #drag-area .icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    #drag-area .icon-item{
+        width: 57px;
+        height: 57px;
+        background: #1E398A;
+        border: 1px solid #1E398A;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        margin-right: 20px;
+    }
+
+    #drag-area .icon a{
+        margin-top: 20px;
+    }
+
+    #drag-area .icon i{
+        font-size: 20px;
+        color: #A1B1DF;
+        margin-right: 20px;
+    }
+
+    #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    #drag-area .drag-title-box{
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+
+    #drag-area .drag-title-box .title-box-icon{
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 65px;
+        height: 65px;
+        line-height: 63px;
+    }
+
+    #drag-area .drag-title-box .sub-title{
+        line-height: 30px;
+        color: #1E398A;
+    }
+
+    #drag-area .drag-title-box .upload-sub-title{
+        font-weight: 700;
+    }
+
+    #drag-area .drag-wrapper .drag-upload-area{
+        border: 3px dashed #d1cece;
+        border-radius: 17px;
+        padding: 25px 20px;
+        cursor: pointer;
+    }
+
+    #drag-area .drag-wrapper .drag-upload-area .browse-photo-pointer{
+        cursor: pointer;
+    }
+    
+    #drag-area .drag-upload-area .title{
+        line-height: 30px;
+        color: #3662C6;
+    }
+        
+    #drag-area .drag-wrapper .drag-upload-area .top-upload-title{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #drag-area .drag-upload-area .sub-title{
+        line-height: 27px;
+        color: #6785E5;
+    }
+
+    #drag-area .drag-upload-area i{
+        display: block;
+        font-size: 28px;
+        color: #0B80FB;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #drag-area .drag-upload-area .upload-icon-title{
+        display: block;
+        color: #067FFE;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Drag area end */
+
+    /***
+        First page responsive css end
+    ***/
+
+
+    /***
+        Second page responsive css start
+    ***/
+
+    #drag-area .drag-wrapper .drag-upload-area .upload-title-gap{
+        margin-bottom: 10px;
+    }
+
+    .second-body #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .second-body #drag-area .icon .globe-icon{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    /***
+        Second page responsive css end
+    ***/
+
+    /***
+        Third page responsive css start
+    ***/
+
+    #drag-area .drag-wrapper .drag-upload-area .upload-title-gap{
+        margin-bottom: 10px;
+    }
+
+    .third-body #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .third-body #drag-area .icon .globe-icon{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .third-body #drag-area .icon .face-icon{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    /***
+        Third page responsive css end
+    ***/
+    
+}
+@media(min-width: 768px) and (max-width: 991.99px) {
+
+    /* common css start */
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body{
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .sub-title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .button{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn{
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid rgb(30, 57, 138);
+        border-radius: 30px;
+        color: #FFFFFF;
+        background: rgb(30, 57, 138);
+        transition: .4s;
+    }
+
+    .btn:hover{
+        background: transparent;
+        border-color: #067FFE;
+        color: #067FFE;
+    }
+
+    /* common css end */
+
+    /***
+        First page responsive css end
+    ***/
+
+    /* Header area start */
+
+    #header-area{
+        background: url(../images/banner.png) no-repeat center;
+    }
+
+    #header-area .overlay{
+        background: rgb(30, 57, 138, 0.98);
+        padding-top: 35px;
+        padding-bottom: 90px;
+    }
+
+    #header-area .header-top{
+        display: flex;
+    }
+
+    #header-area .header-top .box{
+        width: 50%;
+    }
+
+    #header-area .header-top .text{
+        width: 50%;
+    }
+
+    #header-area .header-top .header-box{
+        width: 47px;
+        height: 47px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+    }
+
+    #header-area .header-top h5{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 27px;
+        color: #FFFFFF;
+        text-align: right;
+    }
+    
+    #header-area .header-bottom{
+        margin-top: 70px;
+        padding-left: 15px;
+    }
+
+    #header-area .text-one{
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+
+    #header-area .header-bottom .title{
+        line-height: 26px;
+        color: #90A9EA;
+        margin-top: 5px;
+    }
+
+    #header-area .icon{
+        display: flex;
+    }
+
+    /* Header area end */
+
+    /* Drag area start */
+
+    #drag-area .drag-wrapper{
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 42px;
+        padding: 25px 0;
+        position: absolute;
+        top: 275px;
+        left: 31px;
+        width: 89%;
+    }
+
+    #drag-area .icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    #drag-area .icon-item{
+        width: 57px;
+        height: 57px;
+        background: #1E398A;
+        border: 1px solid #1E398A;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 50px;
+        margin-right: 20px;
+    }
+
+    #drag-area .icon a{
+        margin-top: 20px;
+    }
+
+    #drag-area .icon i{
+        font-size: 20px;
+        color: #A1B1DF;
+        margin-right: 20px;
+    }
+
+    #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    #drag-area .drag-title-box{
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+
+    #drag-area .drag-title-box .title-box-icon{
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 65px;
+        height: 65px;
+        line-height: 63px;
+    }
+
+    #drag-area .drag-title-box .sub-title{
+        line-height: 30px;
+        color: #1E398A;
+    }
+
+    #drag-area .drag-title-box .upload-sub-title{
+        font-weight: 700;
+    }
+
+    #drag-area .drag-wrapper .drag-upload-area{
+        border: 3px dashed #d1cece;
+        border-radius: 17px;
+        padding: 25px 20px;
+        cursor: pointer;
+    }
+
+    #drag-area .drag-wrapper .drag-upload-area .browse-photo-pointer{
+        cursor: pointer;
+    }
+    
+    #drag-area .drag-upload-area .title{
+        line-height: 30px;
+        color: #3662C6;
+    }
+        
+    #drag-area .drag-wrapper .drag-upload-area .top-upload-title{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #drag-area .drag-upload-area .sub-title{
+        line-height: 27px;
+        color: #6785E5;
+    }
+
+    #drag-area .drag-upload-area i{
+        display: block;
+        font-size: 28px;
+        color: #0B80FB;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #drag-area .drag-upload-area .upload-icon-title{
+        display: block;
+        color: #067FFE;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Drag area end */
+
+    /***
+        First page responsive css end
+    ***/
+
+
+    /***
+        Second page responsive css start
+    ***/
+
+    #drag-area .drag-wrapper .drag-upload-area .upload-title-gap{
+        margin-bottom: 10px;
+    }
+
+    .second-body #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .second-body #drag-area .icon .globe-icon{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    /***
+        Second page responsive css end
+    ***/
+
+    /***
+        Third page responsive css start
+    ***/
+
+    #drag-area .drag-wrapper .drag-upload-area .upload-title-gap{
+        margin-bottom: 10px;
+    }
+
+    .third-body #drag-area .icon .icon-item:first-child{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .third-body #drag-area .icon .globe-icon{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .third-body #drag-area .icon .face-icon{
+        -webkit-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        -moz-box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+        box-shadow: 0px 0px 21px 5px rgba(30,57,138,0.75);
+    }
+
+    /***
+        Third page responsive css end
+    ***/
+    
+}
