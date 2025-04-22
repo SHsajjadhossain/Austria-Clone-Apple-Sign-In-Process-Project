@@ -10,7 +10,8 @@
 }
 
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: 'SF Pro', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
     overflow-x: hidden;
     background: transparent;
 }
@@ -151,11 +152,13 @@ nav .mega-menu .sub-menu-list-item-elevated{
 }
 
 nav .mega-menu .sub-menu-list-item-elevated a{
+    display: inline-block;
     font-size: 22px !important;
     font-weight: 600 !important;
     line-height: 1.1666666667;
     letter-spacing: .009em;
-    color: #333336;
+    /* color: #333336; */
+    color: #10101e;
 }
 
 nav .mega-menu .second-last-item{
