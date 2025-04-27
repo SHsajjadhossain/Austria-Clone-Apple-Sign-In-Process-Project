@@ -13,11 +13,12 @@ body{
     font-family: 'SF Pro', sans-serif;
     /* font-family: 'Arial', sans-serif; */
     overflow-x: hidden;
-    background: transparent;
+    /* background: rgb(185, 114, 114); */
+    
 }
 
 .globalnav-content{
-    width: 100%;
+    /* width: 100%; */
     max-width: 1024px;
 }
 
@@ -46,53 +47,52 @@ p{
                     common css end
 =========================================================== */
 
-/* ========================================================
-                    nav-part css start
-============================================================ */
-
 nav{
-    position: relative;
-    margin-top: 0;
-    /* border-top: 1px solid #4a350c; */
+    /* margin-top: 20px; */
     /* position: absolute !important;
     top: 0;
     left: 0;
     z-index: 9999; */
-    z-index: 9999;
     width: 100%;
-    padding-top: 0 !important;
+    position: relative;
+    transition: .4s;
 }
 
 nav .logo{
     font-size: 17px;
     font-weight: 600;
+    margin-right: 0;
+    margin-bottom: 3px;
+    margin-left: 25px;
     padding-top: 0;
 }
 
-nav .nav-wrapper{
-    display: flex !important;
-    justify-content: center;
-}
-
 nav ul{
-    position: relative;
-    align-items: baseline;
+    /* position: relative; */
 }
 
-nav ul li{
+nav ul .nav-item{
     margin-right: 32px;
     transition: .4s;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    
 }
 
 nav ul li a{
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
     font-size: 12px !important;
     font-weight: 400 !important;
     color: #ffffff;
     transition: .4s;
     padding: 0 !important;
+    /* font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .4s;
+    position: relative;
+    padding: 0 !important; */
 }
 
 nav ul li .nav-icon{
@@ -103,32 +103,141 @@ nav ul li .nav-icon{
     /* transition: .4s; */
 }
 
-/* =========================================================
+/* nav ul .nav-item:hover nav{
+    background: #fafafc !important;
+} */
+
+nav ul .nav-item:hover .mega-wrapper{
+    top: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fec600;
+    transition: .4s;
+} */
+
+/* nav ul li .droparea{
+    width: 100%;
+    top: 100px;
+    position: absolute;
+    bottom: -220px;
+    left: 0;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 20px;
+    padding-right: 0;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+} */
+
+/* nav ul li .droparea ol{
+    border-right: 1px solid #353535;
+    width: 25%;
+}
+
+nav ul li .droparea ol li {
+    margin-right: -1px;
+    padding: 20px;
+    transition: .4s;
+}
+
+nav ul li .droparea ol li a{
+    color: #353535;
+    transition: .4s;
+}
+
+nav ul li:hover .droparea{
+    visibility: visible;
+    opacity: 1;
+    top: 50px;
+}
+
+nav ul li .droparea ol li:hover{
+    background: #2d3e50;
+}
+
+nav ul li .droparea ol li:hover a{
+    color: #fec600;
+} */
+
+
+/* nav ul li:hover .droparea ol li .mega-item::after{
+    width: 0;
+}
+
+nav ul li a:hover{
+    color: #fec600;
+}
+
+nav ul li a:hover i{
+    transform: rotate(180deg);
+    color: #fec600;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}  */
+
+/* ==================================================================================
                     nav-part css end
-============================================================ */
+===================================================================================== */
 
 /* =========================================================
                     mega-menu-part css start
 ============================================================ */
 
-nav .mega-menu{
-    visibility: visible;
+nav .mega-wrapper{
+    visibility: hidden;
     width: 100%;
-    background: #ffffff;
-    /* background: #fafafc;
-    background: #f5f5f7; */
-    padding-top: 35px;
+    height: 100vh;
+    background: rgb(250, 250, 252, 0.98);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+    /* padding-top: 35px;
     padding-bottom: 130px;
     position: absolute;
     bottom: -550px;
     left: -65px;
     opacity: 0;
     z-index: 1111;
-    transition: .5s;
-    /* background: rgb(110, 110, 115); */
+    transition: .5s; */
+    transition: .4s;
+    opacity: 0;
 }
 
-nav .mega-menu .sub-menu-header{
+nav .mega-menu-wrapper{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    /* background: #fafafc; */
+    background: #ffffff;
+}
+
+nav .mega-menu{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+nav .mega-menu ol{
+    width: 28%;
+    padding-left: 22px;
+}
+
+nav .mega-menu ol .sub-menu-header{
     font-size: 12px;
     line-height: 1.3333733333;
     font-weight: 400;
@@ -137,63 +246,52 @@ nav .mega-menu .sub-menu-header{
     display: block;
 }
 
-nav .mega-menu .sub-menu-list{
-    padding: 0;
+nav .mega-menu ol .sub-menu-list{
+    padding-left: 0;
 }
 
-nav .mega-menu .sub-menu-list-item-elevated:first-child{
-    margin-top: 6px;
+nav .mega-menu ol .sub-menu-list-item-elevated:first-child{
+    margin-top: 7px;
 }
 
-nav .mega-menu .sub-menu-list-item-elevated{
-    padding-top: 9px;
+nav .mega-menu ol .sub-menu-list-item-elevated{
+    padding-top: 12px;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
 }
 
-nav .mega-menu .sub-menu-list-item-elevated a{
+nav .mega-menu ol .sub-menu-list-item-elevated a{
     display: inline-block;
     font-size: 22px !important;
     font-weight: 600 !important;
     line-height: 1.1666666667;
     letter-spacing: .009em;
-    /* color: #333336; */
     color: #10101e;
 }
 
-nav .mega-menu .second-last-item{
-    margin-top: 14px;
+nav .mega-menu ol .sub-menu-list-item:first-child{
+    margin-top: 13px;
 }
 
-nav .mega-menu .sub-menu-list-item{
+nav .mega-menu ol .second-last-item{
+    margin-top: 10px !important;
+}
+
+nav .mega-menu ol .sub-menu-list-item{
+    padding-top: 6px;
+    margin-top: 0;
     margin-bottom: 0;
+    margin-right: 0;
 }
 
-nav .mega-menu .sub-menu-list-item a{
+nav .mega-menu ol .sub-menu-list-item a{
     font-size: 12px !important;
     font-weight: 600 !important;
     line-height: 1.3333733333;
     letter-spacing: -.01em;
     color: #333336;
 }
-
-/* nav .navbar-nav .full-body-menu{
-    width: 100%;
-    height: 100vh;
-    background: #d2d2d7
-} */
-
-nav .navbar-nav .nav-item:hover .mega-menu{
-    visibility: visible;
-    opacity: 1;
-    bottom: -500px;
-}
-
-/* nav .navbar-nav .nav-item:hover .full-body{
-    background: #d2d2d7 !important;
-
-    background: #f5f5f7 !important;
-} */
 
 /* =========================================================
                     mega-menu-part css end
